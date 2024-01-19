@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Buku</title>
+    <style>
+        body {
+            background-color: #FFC0CB; 
+            height: 100vh; 
+            margin: 0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        fieldset {
+            width: 400px;
+            background-color: #FFF; 
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #FF69B4;
+        }
+        legend {
+            color: #FF69B4; 
+            font-weight: bold;
+            text-align: center;
+        }
+        input {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #FF69B4; 
+            border-radius: 5px;
+            width: 100%; 
+        }
+        button {
+            padding: 8px;
+            margin-top: 10px;
+            background-color: #FF69B4; 
+            color: #FFF; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+       
+        <legend>Input Data Penerbit</legend>
+
+        
+        <form action="tambah_penerbit.php" method="post">
+            <input type="text" name="ID_Penerbit" placeholder="ID Penerbit">
+            <br><br>
+            <input type="text" name="Nama" placeholder="Nama">
+            <br><br>
+            <input type="text" name="Alamat" placeholder="Alamat">
+            <br><br>
+            <input type="text" name="Kota" placeholder="Kota">
+            <br><br>
+            <input type="text" name="Telepon" placeholder="Telepon">
+            <br><br>
+            <button type="submit" name="submit">SIMPAN</button>
+            <button type="reset" name="reset">RESET</button>
+        </form>
+    </fieldset>
+</body>
+</html>
